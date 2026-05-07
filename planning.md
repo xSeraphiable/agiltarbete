@@ -1,5 +1,5 @@
 <h3>Planeringsmöte 7/5 kl 09.00 - 10.30</h3>
-Vi ska göra en todo-app och kommer använda github för att skapa user stories och backlog. Arbetet sker på distans.
+Vi ska göra en enkel todo-app och kommer använda github för att skapa user stories och backlog. Arbetet sker på distans.
 
 <h5>Dagar vi kommer arbeta:</h5>
 <ul>
