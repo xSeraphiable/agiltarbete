@@ -1,14 +1,14 @@
 import { useState } from 'react'
 import './App.css'
-import test from './pages/todo.tsx'
+import AddTodo from './pages/AddTodoPage'
+import ShowTodo from './pages/ListTodoPage'
 
 function App() {
-
   return (
     <>
-      <h1>Hej</h1>
+      <AddTodo/>
+      <ShowTodo/>
     </>
-
   )
 }
 
