@@ -1,7 +1,5 @@
-//import {  useState } from "react";
 import type { TodoType } from "../types/todo";
-//import './todo.css';
-import { useState } from "react";
+import {  useState } from "react";
 
 const ShowTodo = () => {
 
@@ -25,6 +23,8 @@ const updatedTodo = (id: number, completed: boolean) => {
     showTodos(updatedTodos);
     localStorage.setItem('todos', JSON.stringify(updatedTodos));
 }
+
+
 
 return (<>
     <div className="todo-container">

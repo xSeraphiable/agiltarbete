@@ -1,6 +1,4 @@
-//import {  useState } from "react";
 import type { TodoType } from "../types/todo";
-//import './todo.css';
 import { useState } from "react";
 
 const AddTodo = () => {
@@ -8,6 +6,7 @@ const [message, setMessage] = useState<string>('');
 const [date, setDate] = useState<string>('');
 const [completed, setCompleted] = useState<boolean>(false);
 const [todos, setTodos] = useState<TodoType[]>([]);
+
 
     return (<>
     <div>
@@ -30,7 +29,11 @@ const [todos, setTodos] = useState<TodoType[]>([]);
             setMessage('');
             setDate('');
             setCompleted(false);
+
+
+            
             localStorage.setItem('todos', JSON.stringify([...todos, newTodo]));
+            location.reload();
 
         }}>Add Todo</button>
     </div>
@@ -40,3 +43,7 @@ const [todos, setTodos] = useState<TodoType[]>([]);
 };
 
 export default AddTodo;
+
+function useEffect(arg0: () => void, arg1: TodoType[][]) {
+    throw new Error("Function not implemented.");
+}
