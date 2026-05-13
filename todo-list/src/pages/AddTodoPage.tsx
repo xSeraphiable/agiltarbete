@@ -5,7 +5,6 @@ const AddTodo = () => {
 const [message, setMessage] = useState<string>('');
 const [date, setDate] = useState<string>('');
 const [completed, setCompleted] = useState<boolean>(false);
-const [todos, setTodos] = useState<TodoType[]>([]);
 
 
     return (<>
@@ -25,14 +24,10 @@ const [todos, setTodos] = useState<TodoType[]>([]);
                 date
             };
 
-            setTodos([...todos, newTodo]);
-            setMessage('');
-            setDate('');
-            setCompleted(false);
+            let storedTodos: TodoType[] = localStorage.getItem('todos') ? JSON.parse(localStorage.getItem('todos')!) : [];
+            storedTodos.push(newTodo);
 
-
-            
-            localStorage.setItem('todos', JSON.stringify([...todos, newTodo]));
+            localStorage.setItem('todos', JSON.stringify(storedTodos));
             location.reload();
 
         }}>Add Todo</button>
