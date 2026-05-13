@@ -1,5 +1,6 @@
 import type { TodoType } from "../types/todo";
 import { useState } from "react";
+import "./ListTodo.css";
 
 const ShowTodo = () => {
   const [todos, showTodos] = useState<TodoType[]>(() => {
@@ -42,7 +43,7 @@ const ShowTodo = () => {
                   updatedTodo(todo.id, e.target.checked);
                 }}
               />
-              <span>{todo.message}</span>
+              <span className="todomessage">{todo.message}</span>
               <span>{todo.date}</span>
 
               <button onClick={() => deleteTodo(todo.id)}>Ta bort</button>
