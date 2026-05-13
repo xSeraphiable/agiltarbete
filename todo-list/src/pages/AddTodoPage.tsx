@@ -1,5 +1,6 @@
 import type { TodoType } from "../types/todo";
 import { useState } from "react";
+import './AppTodo.css';
 
 const AddTodo = () => {
 const [message, setMessage] = useState<string>('');
@@ -8,7 +9,7 @@ const [completed, setCompleted] = useState<boolean>(false);
 
 
     return (<>
-    <div>
+    <div className="add-todo">
         <h1>Add Todo</h1>
         <input type="text" placeholder="Message" value={message} onChange={(e) => setMessage(e.target.value)} />
         <input type="date" value={date} onChange={(e) => setDate(e.target.value)} />
