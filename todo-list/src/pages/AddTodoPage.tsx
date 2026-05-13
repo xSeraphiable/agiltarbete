@@ -12,10 +12,6 @@ const [completed, setCompleted] = useState<boolean>(false);
         <h1>Add Todo</h1>
         <input type="text" placeholder="Message" value={message} onChange={(e) => setMessage(e.target.value)} />
         <input type="date" value={date} onChange={(e) => setDate(e.target.value)} />
-        <label>
-            Completed:
-            <input type="checkbox" checked={completed} onChange={(e) => setCompleted(e.target.checked)} />
-        </label>
         <button onClick={() => {
             const newTodo: TodoType = {
                 id: Date.now(),
