@@ -1,15 +1,11 @@
-import { useState } from 'react'
-import './App.css'
-import test from './pages/todo.tsx'
+import Todo from "./pages/todo";
 
 function App() {
-
-  return (
-    <>
-      <h1>Hej</h1>
-    </>
-
-  )
+    return (
+        <div>
+            <Todo />
+        </div>
+    );
 }
 
 export default App;

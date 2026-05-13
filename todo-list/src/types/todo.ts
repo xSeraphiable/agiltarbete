@@ -1,6 +1,5 @@
-export type Todo = {
+export type TodoType = {
     id: number;
-    title: string;
     message: string;
     completed: boolean;
     date: string;
