@@ -1,9 +1,4 @@
-Utvärdering av labben
-• vad ni byggde
-• hur ni arbetade med Git
-• vad som fungerade bra
-• hur samarbetet fungerade
-• vad ni hade gjort annorlunda
+<h5>Utvärdering av labben</h5>
 
 Vi har byggt ett webbapp i react med typescript där man kan lägga till och ta bort uppgifter/todos.
 
