@@ -1,11 +1,15 @@
-import Todo from "./pages/todo";
+import { useState } from 'react'
+import './App.css'
+import AddTodo from './pages/AddTodoPage'
+import ShowTodo from './pages/ListTodoPage'
 
 function App() {
-    return (
-        <div>
-            <Todo />
-        </div>
-    );
+  return (
+    <>
+      <AddTodo/>
+      <ShowTodo/>
+    </>
+  )
 }
 
 export default App;
